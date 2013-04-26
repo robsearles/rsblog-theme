@@ -31,16 +31,20 @@ LAYOUT & GRID STYLES
 HEADER SYTLES
 *********************/
 
-.header {}
+.header {
+    nav {
+        display: block;
+        float: right;
 
-	#logo {}
+    }
+}
+
 
 /*********************
 NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #eee;
 	border: 0;
 
 	li {
@@ -49,14 +53,12 @@ NAVIGATION STYLES
 
 		a {
 			border-bottom: 0;
-
+                        padding: 3px 10px;
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				background-color: #dedede;
-
 			}
 		}
 
@@ -141,7 +143,7 @@ SIDEBARS & ASIDES
 }
 
 	.widgettitle {
-		border-bottom: 2px solid #444;
+		border-bottom: 1px solid #999;
 		margin-bottom: 0.75em;
 	}
 

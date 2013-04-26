@@ -701,38 +701,38 @@ BUTTONS
 }
 .blue-button,
 .blue-button:visited {
-  border-color: #1472ad;
-  text-shadow: 0 1px 1px #1472ad;
-  background-color: #1681c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1990db), to(#1681c4));
-  background-image: -webkit-linear-gradient(top, #1990db, #1681c4);
-  background-image: -moz-linear-gradient(top, #1990db, #1681c4);
-  background-image: -o-linear-gradient(top, #1990db, #1681c4);
-  background-image: linear-gradient(to bottom, #1990db, #1681c4);
-  -webkit-box-shadow: inset 0 0 3px #59b3ec;
-  -moz-box-shadow: inset 0 0 3px #59b3ec;
-  box-shadow: inset 0 0 3px #59b3ec;
+  border-color: #354b62;
+  text-shadow: 0 1px 1px #354b62;
+  background-color: #3e5872;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#476583), to(#3e5872));
+  background-image: -webkit-linear-gradient(top, #476583, #3e5872);
+  background-image: -moz-linear-gradient(top, #476583, #3e5872);
+  background-image: -o-linear-gradient(top, #476583, #3e5872);
+  background-image: linear-gradient(to bottom, #476583, #3e5872);
+  -webkit-box-shadow: inset 0 0 3px #6c8eaf;
+  -moz-box-shadow: inset 0 0 3px #6c8eaf;
+  box-shadow: inset 0 0 3px #6c8eaf;
 }
 .blue-button:hover,
 .blue-button:visited:hover,
 .blue-button:focus,
 .blue-button:visited:focus {
-  border-color: #116396;
-  background-color: #1472ad;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
-  background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
-  background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
-  background-image: -o-linear-gradient(top, #1784c9, #1472ad);
-  background-image: linear-gradient(to bottom, #1784c9, #1472ad);
+  border-color: #2c3f51;
+  background-color: #354b62;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#405b76), to(#354b62));
+  background-image: -webkit-linear-gradient(top, #405b76, #354b62);
+  background-image: -moz-linear-gradient(top, #405b76, #354b62);
+  background-image: -o-linear-gradient(top, #405b76, #354b62);
+  background-image: linear-gradient(to bottom, #405b76, #354b62);
 }
 .blue-button:active,
 .blue-button:visited:active {
-  background-color: #1990db;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
-  background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
-  background-image: -moz-linear-gradient(top, #1681c4, #1990db);
-  background-image: -o-linear-gradient(top, #1681c4, #1990db);
-  background-image: linear-gradient(to bottom, #1681c4, #1990db);
+  background-color: #476583;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3e5872), to(#476583));
+  background-image: -webkit-linear-gradient(top, #3e5872, #476583);
+  background-image: -moz-linear-gradient(top, #3e5872, #476583);
+  background-image: -o-linear-gradient(top, #3e5872, #476583);
+  background-image: linear-gradient(to bottom, #3e5872, #476583);
 }
 /*
 BASE (MOBILE) SIZE
@@ -768,6 +768,19 @@ and will be used across all viewports.
 13. FOOTER STYLES
 
 ******************************************************************/
+#ois_2 {
+  float: left;
+  margin-right: 1em;
+}
+div.yarpp-related {
+  float: left;
+  border: 1px solid #999999;
+  padding: 0.5em 1em;
+  margin: 5px 0;
+}
+div.yarpp-related h2 {
+  margin: 5px 0;
+}
 /*********************
 01. GENERAL STYLES
 *********************/
@@ -777,7 +790,7 @@ body {
 
 }
 body {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #565656;
@@ -833,7 +846,7 @@ body {
 *********************/
 a,
 a:visited {
-  color: #f01d4f;
+  color: #476583;
   /* on hover */
 
   /* on click */
@@ -845,7 +858,7 @@ a:hover,
 a:visited:hover,
 a:focus,
 a:visited:focus {
-  color: #d10e3c;
+  color: #2c3f51;
 }
 a:link,
 a:visited:link {
@@ -870,7 +883,7 @@ h4,
 .h4,
 h5,
 .h5 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Libre Baskerville', "Palatino Linotype", "Book Antiqua", Palatino, serif;
   text-rendering: optimizelegibility;
   font-weight: 400;
   /*
@@ -895,8 +908,8 @@ h5 a,
 }
 h1,
 .h1 {
-  font-size: 2.5em;
-  line-height: 1.333em;
+  font-size: 2em;
+  line-height: 1.3em;
 }
 h2,
 .h2 {
@@ -923,6 +936,34 @@ h5,
 /*********************
 06. HEADER SYTLES
 *********************/
+.header p.logo {
+  font-family: 'Libre Baskerville', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+  padding: 0;
+  line-height: 1em;
+}
+.header p.logo a {
+  color: #476583;
+  text-decoration: none;
+}
+.header p.strap {
+  font-family: 'Libre Baskerville', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.2em;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.header nav {
+  display: block;
+  font-family: 'Libre Baskerville', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+.header nav ul {
+  margin: 0;
+  padding: 0;
+}
 /*********************
 07. NAVIGATION STYLES
 *********************/
@@ -934,7 +975,7 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 .nav {
-  border: 1px solid #ccc;
+  border: 0;
   border-bottom: 0;
   /* end .menu li */
 
@@ -954,17 +995,16 @@ and more scalable.
 
 }
 .nav li a {
+  color: #476583;
   display: block;
   text-decoration: none;
-  padding: 10px 10px;
-  background-color: #eee;
-  border-bottom: 1px solid #ccc;
+  padding: 0;
   /*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
+		      remember this is for mobile ONLY, so there's no need
+		      to even declare hover styles here, you can do it in
+		      the style.scss file where it's relevant. We want to
+		      keep this file as small as possible!
+		      */
 
 }
 .nav li ul.sub-menu li a,
@@ -991,6 +1031,7 @@ and more scalable.
 /* post meta */
 .byline {
   color: #999;
+  margin: 0;
 }
 /* entry content */
 .entry-content {
@@ -1350,6 +1391,11 @@ tweeners.
   upon your base.less styles.
   
   ******************************************************************/
+  .header nav {
+    margin-top: -5em;
+    text-align: right;
+    float: right;
+  }
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -1373,6 +1419,7 @@ tweeners.
   
   }
   .menu ul li a {
+    padding: 3px 10px;
     /*
   					you can use hover styles here even though this size
   					has the possibility of being a mobile device.
@@ -1540,11 +1587,14 @@ you can add resource intensive styles.
   /*********************
   HEADER SYTLES
   *********************/
+  .header nav {
+    display: block;
+    float: right;
+  }
   /*********************
   NAVIGATION STYLES
   *********************/
   .nav {
-    background: #eee;
     border: 0;
     /* end .menu ul li */
   
@@ -1565,15 +1615,12 @@ you can add resource intensive styles.
   }
   .nav li a {
     border-bottom: 0;
+    padding: 3px 10px;
     /*
   			you can use hover styles here even though this size
   			has the possibility of being a mobile device.
   			*/
   
-  }
-  .nav li a:hover,
-  .nav li a:focus {
-    background-color: #dedede;
   }
   .nav li ul.sub-menu,
   .nav li ul.children {
@@ -1619,7 +1666,7 @@ you can add resource intensive styles.
     margin-top: 2.2em;
   }
   .widgettitle {
-    border-bottom: 2px solid #444;
+    border-bottom: 1px solid #999;
     margin-bottom: 0.75em;
   }
   .widget {

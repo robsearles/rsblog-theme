@@ -30,6 +30,10 @@
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
+
+                <!-- google fonts -->
+                <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
@@ -37,27 +41,29 @@
 		<!-- drop Google Analytics Here -->
 		<!-- end analytics -->
 
+
+
+<?php /*
+<!-- rob stuff for testing -->
+<link rel="stylesheet/less" type="text/css" href="/wp-content/themes/rsblog/library/less/style.less" />
+<script src="/wp-content/themes/rsblog/less-1.3.3.min.js" type="text/javascript"></script>
+*/
+?>
 	</head>
 
-	<body <?php body_class(); ?>>
+  <body <?php body_class(); ?>>
 
-		<div id="container">
+    <div id="container">
 
-			<header class="header" role="banner">
+      <header class="header wrap" role="banner">
 
-				<div id="inner-header" class="wrap clearfix">
-
-					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-
-					<!-- if you'd like to use the site description you can un-comment it below -->
-					<?php // bloginfo('description'); ?>
-
-
-					<nav role="navigation">
-						<?php bones_main_nav(); ?>
-					</nav>
-
-				</div> <!-- end #inner-header -->
-
-			</header> <!-- end header -->
+	<div class="brand">
+	  <p class="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+          <p class="strap"><?php bloginfo('description'); ?></p>
+        </div>
+          
+	<nav role="navigation">
+	  <?php bones_main_nav(); ?>
+	</nav>
+                  
+      </header> <!-- end header -->

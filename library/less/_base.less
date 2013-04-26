@@ -28,6 +28,22 @@ and will be used across all viewports.
 ******************************************************************/
 
 
+#ois_2 {
+    float: left;
+    margin-right: 1em;
+}
+div.yarpp-related {
+    float: left;
+    border: 1px solid #999999;
+    padding: 0.5em 1em;
+    margin: 5px 0;
+
+    h2 {
+        margin: 5px 0;
+    }
+}
+
+
 
 
 /*********************
@@ -38,7 +54,7 @@ html, body {
 	/* height: 100%; */
 }
 body {
-	font-family: @serif;
+	font-family: @sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
 	color: #565656;
@@ -128,7 +144,7 @@ a, a:visited {
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: @sans-serif;
+	font-family: @serif;
 	text-rendering: optimizelegibility;
 	font-weight: 400;
 	/*
@@ -143,8 +159,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
+	font-size: 2em;
+	line-height: 1.3em;
 }
 
 h2, .h2 {
@@ -175,19 +191,43 @@ h5, .h5 {
 
 .header {
 	#inner-header {}
+	p.logo {
+            font-family: @serif;
+            font-size: 3em;
+            font-weight: bold;
+            margin: 1em 0 0 0;
+            padding: 0;
+            line-height: 1em;
+        }
+        p.logo a {
+            color: @head-blue;
+            text-decoration: none;        
+        }
 
-	#logo {}
+        p.strap {
+            font-family: 'Libre Baskerville', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-size: 1.2em;
+            margin: 0 0 1em 0;
+            padding: 0;
+        }
 
 	nav {
-		ul.nav {
-			li {
-				a {}
-
-				&:first-child {}
-
-				&:last-child {}
-			}
+            display: block;
+            font-family: @serif;
+            font-weight: normal;
+            font-size: 1.2em;
+	    ul {
+                margin: 0;
+                padding: 0;
+		li {
+		    a {
+                    }
+                    
+		    &:first-child {}
+                    
+		    &:last-child {}
 		}
+	    }
 	}
 }
 
@@ -204,27 +244,26 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
+	border: 0;
 	border-bottom: 0;
 
 	li {
 
 		a {
-			display: block;
-			text-decoration: none;
-			padding: 10px 10px;
-			background-color: #eee;
-			border-bottom: 1px solid #ccc;
-
-			/*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
-			&:hover, &:focus {
-
-			}
+                    color: @head-blue;
+		    display: block;
+		    text-decoration: none;
+		    padding: 0;
+                    
+		    /*
+		      remember this is for mobile ONLY, so there's no need
+		      to even declare hover styles here, you can do it in
+		      the style.scss file where it's relevant. We want to
+		      keep this file as small as possible!
+		      */
+		    &:hover, &:focus {
+                        
+		    }
 		}
 
 		&:first-child {}
@@ -315,7 +354,7 @@ and more scalable.
 		/* post meta */
 		.byline {
 			color: #999;
-
+                        margin: 0;
 			time {}
 		}
 

@@ -8,6 +8,7 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, ect.
 */
 
+
 /************* INCLUDE NEEDED FILES ***************/
 
 /*
