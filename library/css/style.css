@@ -768,10 +768,6 @@ and will be used across all viewports.
 13. FOOTER STYLES
 
 ******************************************************************/
-#ois_2 {
-  float: left;
-  margin-right: 1em;
-}
 div.yarpp-related {
   float: left;
   border: 1px solid #999999;
@@ -1042,6 +1038,13 @@ and more scalable.
 			but it's up to you. Feel free to change it up.
 			*/
 
+}
+.entry-content ol {
+  list-style: decimal;
+  margin: 0 3em;
+}
+.entry-content ol li {
+  margin-bottom: 0.5em;
 }
 .entry-content dd {
   margin-left: 0;

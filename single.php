@@ -28,6 +28,12 @@
 	</section> <!-- end article section -->
         
 	<footer class="article-footer">
+<ul>
+        <?php previous_post_link('<li>%link</li>', '%title', TRUE) ;?>
+      <?php next_post_link('<li>%link</li>', '%title', TRUE); ?> 
+</ul>
+
+<?php echo do_shortcode( '[ois skin="Footer"]' ); ?>
 	</footer> <!-- end article footer -->
         
 	<?php comments_template(); ?>
